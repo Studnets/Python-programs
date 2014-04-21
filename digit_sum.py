@@ -1,5 +1,4 @@
 num_list = []
-j = 0
 marker_0 = 0 
 while marker_0 == 0:
 	n = input("Type a multi-digit number:  ")    
@@ -8,7 +7,7 @@ while marker_0 == 0:
 	else:  
 		break
 #^Checks if digit
-
+j = 0
 n = str(n)
 print ('calculating sum...')
 for i in n:
