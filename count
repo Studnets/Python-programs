@@ -1,0 +1,56 @@
+in_list = []
+marker_list = []
+
+
+#in_list creator
+##########################################################################################
+marker_0 = 0
+while marker_0 == 0:
+    marker_1 = 0 
+    while marker_1 == 0:
+    	x = input("Type a list of integers and type 'end' to end:  ")    
+    	if x.isdigit() or x == 'end':        
+    		break
+    	else:
+    	    print ('*Enter valid input')
+    if x == 'end':
+        break
+    in_list.append(x)
+##########################################################################################
+
+#marker_list creator
+##################################################
+for i in in_list:
+	count = 0
+	for j in marker_list:
+		if i == j:
+			None
+		elif i != j:
+			count = count + 1
+	if count == len(marker_list):
+		marker_list.append(i)
+###################################################
+print ("Non-repeated list")
+print (marker_list)
+print ()
+print ()
+
+#counter
+##################################################
+print("list" , "   amount")
+for i in marker_list:
+	count1 = 0
+	for j in in_list:
+		if i == j:
+			count1 = count1 + 1
+		elif i != j:
+			None
+	i = int(i)
+	print (i , '   :   ' , count1)
+################################################
+
+
+'''
+print (in_list)
+print (marker_list)
+'''
